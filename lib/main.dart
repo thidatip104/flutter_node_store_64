@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_node_store67/themes/styles.dart';
-import 'package:flutter_node_store67/utils/app_router.dart';
+import 'package:flutter_node_store67/app_router.dart';
 import 'package:flutter_node_store67/utils/utility.dart';
 import 'package:logger/logger.dart';
 import 'package:shared_preferences/shared_preferences.dart';

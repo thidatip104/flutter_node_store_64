@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:dio/dio.dart';
 import 'package:flutter_node_store67/services/dio_config.dart';
-import 'package:flutter_node_store67/utils/main.dart';
+import 'package:flutter_node_store67/main.dart';
 import 'package:flutter_node_store67/utils/utility.dart';
 
 class CallAPI {

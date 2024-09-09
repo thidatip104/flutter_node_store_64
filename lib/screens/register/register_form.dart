@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_node_store67/components/custom_textfield.dart';
 import 'package:flutter_node_store67/components/rouded_button.dart';
 import 'package:flutter_node_store67/services/rest_api.dart';
-import 'package:flutter_node_store67/utils/app_router.dart';
-import 'package:flutter_node_store67/utils/main.dart';
+import 'package:flutter_node_store67/app_router.dart';
+import 'package:flutter_node_store67/main.dart';
 import 'package:flutter_node_store67/utils/utility.dart';
 
 class RegisterForm extends StatelessWidget {

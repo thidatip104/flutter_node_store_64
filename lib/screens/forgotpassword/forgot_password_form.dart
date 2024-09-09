@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_node_store67/utils/app_router.dart';
+import 'package:flutter_node_store67/app_router.dart';
 import 'package:flutter_node_store67/components/custom_textfield.dart';
 import 'package:flutter_node_store67/components/rouded_button.dart';
 
