@@ -32,7 +32,7 @@ void main() async {
 
   // ถ้าเคย Login แล้ว ให้ไปยังหน้า Dashboard
   if(Utility.getSharedPreference('loginStatus') == true){
-    // initialRoute = AppRouter.dashboard;
+    initialRoute = AppRouter.dashboard;
   } else if(Utility.getSharedPreference('welcomeStatus') == true) {
     // ถ้าเคยแสดง Intro แล้ว ให้ไปยังหน้า Login
     initialRoute = AppRouter.login;
