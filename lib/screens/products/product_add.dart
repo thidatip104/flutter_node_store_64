@@ -5,6 +5,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_node_store67/models/product_model.dart';
+import 'package:flutter_node_store67/screens/bottomnavpage/home_screen.dart';
 import 'package:flutter_node_store67/screens/products/components/product_form.dart';
 import 'package:flutter_node_store67/services/rest_api.dart';
 import 'package:flutter_node_store67/utils/utility.dart';
@@ -61,9 +62,12 @@ class _ProductAddState extends State<ProductAdd> {
 
                 if(body['status'] == 'ok'){
                   
+                  if(!mounted) return; // กรณีที่ออกจากหน้าจอแล้ว ไม่ต้องทำอะไรต่อ
                   Navigator.pop(context, true); // ปิดหน้าต่างและส่งค่ากลับไปยังหน้าก่อนหน้า
 
-                  
+                  // อัพเดตหน้าจอ HomeScreen
+                  refreshKey.currentState!.show();
+
                 }
 
               }
