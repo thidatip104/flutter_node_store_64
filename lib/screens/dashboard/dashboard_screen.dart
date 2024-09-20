@@ -109,21 +109,21 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   leading: Icon(Icons.info_outline),
                   title: Text('Info'),
                   onTap: () {
-                    // Navigator.pushNamed(context, AppRouter.info);
+                    Navigator.pushNamed(context, AppRouter.info);
                   },
                 ),
                 ListTile(
                   leading: Icon(Icons.person_outline),
                   title: Text('About'),
                   onTap: () {
-                    // Navigator.pushNamed(context, AppRouter.about);
+                    Navigator.pushNamed(context, AppRouter.about);
                   },
                 ),
                 ListTile(
                   leading: Icon(Icons.email_outlined),
                   title: Text('Contact'),
                   onTap: () {
-                    // Navigator.pushNamed(context, AppRouter.contact);
+                    Navigator.pushNamed(context, AppRouter.contact);
                   },
                 ),
               ],
