@@ -79,7 +79,13 @@ class _ProductDetailState extends State<ProductDetail> {
               children: [
                 IconButton(
                   onPressed: (){
-                    
+                    Navigator.pushNamed(
+                      context, 
+                      AppRouter.productUpdate,
+                      arguments: {
+                        'products': arguments['products']
+                      }
+                    );
                   }, 
                   icon: const Icon(Icons.edit)
                 ),

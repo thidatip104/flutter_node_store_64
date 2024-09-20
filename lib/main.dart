@@ -1,53 +1,39 @@
+// ignore_for_file: prefer_const_constructors, prefer_typing_uninitialized_variables
+
 import 'package:flutter/material.dart';
-import 'package:flutter_node_store67/themes/styles.dart';
 import 'package:flutter_node_store67/app_router.dart';
+import 'package:flutter_node_store67/themes/styles.dart';
 import 'package:flutter_node_store67/utils/utility.dart';
-import 'package:logger/logger.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
-// Logger
-// final logger = Logger(
-//     printer: PrettyPrinter(
-//   methodCount: 1,
-//   colors: true,
-//   printEmojis: true,
-//   printTime: false,
-// ));
-
-// void testLogger() {
-//   logger.t('Verbose log');
-//   logger.d('Debug log');
-//   logger.i('info log');
-//   logger.w('Warning log');
-//   logger.e('Error log');
-//   logger.f('What a terrible failure log');
-// }
-
+// กำหนดตัวแปร initialRoute ให้กับ MaterialApp
 var initialRoute;
+
 void main() async {
-  // testLogger();
+
+  // Test Logger
+  // Utility().testLogger();
+
+  // ต้องเรียกใช้ WidgetsFlutterBinding.ensureInitialized()
+  // เพื่อให้สามารถเรียกใช้ SharedPreferences ได้
   WidgetsFlutterBinding.ensureInitialized();
-// เรียกใช้ SharedPreferences
-  await Utility.initSharedPrefs(
+
+  // เรียกใช้ SharedPreferences
+  await Utility.initSharedPrefs();
 
   // ถ้าเคย Login แล้ว ให้ไปยังหน้า Dashboard
   if(Utility.getSharedPreference('loginStatus') == true){
     initialRoute = AppRouter.dashboard;
-  } else if(Utility.getSharedPreference);('welcomeStatus') == true) {
+  } else if(Utility.getSharedPreference('welcomeStatus') == true) {
     // ถ้าเคยแสดง Intro แล้ว ให้ไปยังหน้า Login
     initialRoute = AppRouter.login;
   } else {
     // ถ้ายังไม่เคยแสดง Intro ให้ไปยังหน้า Welcome
     initialRoute = AppRouter.welcome;
   }
-  
-  // SharedPreferences prefs = await SharedPreferences.getInstance();
-  // if (prefs.getBool('welcomeStatus') == true) {
-  //   initialRoute = AppRouter.login;
-  // } else {
-  //   initialRoute = AppRouter.welcome;
-  // }
-  runApp(MyApp());
+
+  runApp(
+    const MyApp(),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -56,19 +42,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       initialRoute: initialRoute,
       routes: AppRouter.routes,
-      // theme: ThemeData(
-      //   useMaterial3: false,
-      //   colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.blue),
-      // ),
-      // home: Scaffold(
-      //   appBar: AppBar(
-      //     title: const Text('Stock App'),
-      //   ),
-      //   body: Container(),
-      // ),
     );
   }
 }
