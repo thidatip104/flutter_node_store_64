@@ -1,4 +1,4 @@
-# flutter_node_store67
+# flutter_node_store_earn
 
 A new Flutter project.
 

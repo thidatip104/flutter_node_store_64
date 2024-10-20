@@ -1,8 +1,8 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:flutter_node_store67/components/custom_textfield.dart';
-import 'package:flutter_node_store67/models/product_model.dart';
-import 'package:flutter_node_store67/screens/products/components/product_image.dart';
+import 'package:flutter_node_store_earn/components/custom_textfield.dart';
+import 'package:flutter_node_store_earn/models/product_model.dart';
+import 'package:flutter_node_store_earn/screens/products/components/product_image.dart';
 
 class ProductForm extends StatefulWidget {
   final ProductModel product;

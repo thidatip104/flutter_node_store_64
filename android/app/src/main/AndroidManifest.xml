@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="flutter_node_store67"
+        android:label="flutter_node_store_earn"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
 

@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_node_store67/app_router.dart';
-import 'package:flutter_node_store67/components/custom_textfield.dart';
-import 'package:flutter_node_store67/components/rouded_button.dart';
+import 'package:flutter_node_store_earn/app_router.dart';
+import 'package:flutter_node_store_earn/components/custom_textfield.dart';
+import 'package:flutter_node_store_earn/components/rouded_button.dart';
 
 class ForgotPasswordForm extends StatelessWidget {
   ForgotPasswordForm({super.key});

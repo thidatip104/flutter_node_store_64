@@ -1,12 +1,12 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_node_store67/components/custom_textfield.dart';
-import 'package:flutter_node_store67/components/rouded_button.dart';
-import 'package:flutter_node_store67/components/social_media_options.dart';
-import 'package:flutter_node_store67/services/rest_api.dart';
-import 'package:flutter_node_store67/app_router.dart';
-import 'package:flutter_node_store67/utils/utility.dart';
+import 'package:flutter_node_store_earn/components/custom_textfield.dart';
+import 'package:flutter_node_store_earn/components/rouded_button.dart';
+import 'package:flutter_node_store_earn/components/social_media_options.dart';
+import 'package:flutter_node_store_earn/services/rest_api.dart';
+import 'package:flutter_node_store_earn/app_router.dart';
+import 'package:flutter_node_store_earn/utils/utility.dart';
 
 class LoginForm extends StatelessWidget {
   LoginForm({Key? key}) : super(key: key);

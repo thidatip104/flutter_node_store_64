@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:dio/dio.dart';
-import 'package:flutter_node_store67/models/product_model.dart';
-import 'package:flutter_node_store67/services/dio_config.dart';
-import 'package:flutter_node_store67/main.dart';
-import 'package:flutter_node_store67/utils/utility.dart';
+import 'package:flutter_node_store_earn/models/product_model.dart';
+import 'package:flutter_node_store_earn/services/dio_config.dart';
+import 'package:flutter_node_store_earn/main.dart';
+import 'package:flutter_node_store_earn/utils/utility.dart';
 import 'package:http_parser/http_parser.dart';
 
 class CallAPI {

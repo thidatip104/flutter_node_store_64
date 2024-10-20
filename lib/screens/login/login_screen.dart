@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_node_store67/components/mobile_layout.dart';
-import 'package:flutter_node_store67/components/responsive_layout.dart';
-import 'package:flutter_node_store67/components/wed_layout.dart';
-import 'package:flutter_node_store67/screens/login/login_form.dart';
+import 'package:flutter_node_store_earn/components/mobile_layout.dart';
+import 'package:flutter_node_store_earn/components/responsive_layout.dart';
+import 'package:flutter_node_store_earn/components/wed_layout.dart';
+import 'package:flutter_node_store_earn/screens/login/login_form.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

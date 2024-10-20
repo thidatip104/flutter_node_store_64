@@ -4,11 +4,11 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_node_store67/models/product_model.dart';
-import 'package:flutter_node_store67/screens/bottomnavpage/home_screen.dart';
-import 'package:flutter_node_store67/screens/products/components/product_form.dart';
-import 'package:flutter_node_store67/services/rest_api.dart';
-import 'package:flutter_node_store67/utils/utility.dart';
+import 'package:flutter_node_store_earn/models/product_model.dart';
+import 'package:flutter_node_store_earn/screens/bottomnavpage/home_screen.dart';
+import 'package:flutter_node_store_earn/screens/products/components/product_form.dart';
+import 'package:flutter_node_store_earn/services/rest_api.dart';
+import 'package:flutter_node_store_earn/utils/utility.dart';
 
 class ProductAdd extends StatefulWidget {
   const ProductAdd({super.key});

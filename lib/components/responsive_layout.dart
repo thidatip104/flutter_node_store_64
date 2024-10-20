@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_node_store67/themes/colors.dart';
+import 'package:flutter_node_store_earn/themes/colors.dart';
 
 class ResponsiveLayout extends StatelessWidget {
   final Widget webChild;
